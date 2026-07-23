@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+:root{
+
+    --background:#070707;
+    --gold:#D4AF37;
+    --white:#F5F5F5;
+    --gray:#9A9A9A;
+
+    --heading:'Cormorant Garamond',serif;
+    --body:'Inter',sans-serif;
+}
+
+
+body{
+
+    background:var(--background);
+    color:var(--white);
+
+    font-family:var(--body);
+
+    overflow-x:hidden;
+}
