@@ -103,3 +103,26 @@
     align-items: center;
 
 }
+.hero-model {
+    position: relative;
+}
+
+.hero-model::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(212,175,55,0.18) 0%,
+        rgba(212,175,55,0.06) 35%,
+        transparent 70%
+    );
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero-model canvas {
+    position: relative;
+    z-index: 1;
+}

@@ -36,7 +36,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 // Better physically-based rendering
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.2;
+renderer.toneMappingExposure = 1.35;
 
 container.appendChild(renderer.domElement);
 
@@ -45,6 +45,10 @@ container.appendChild(renderer.domElement);
 // ====================
 
 // Soft overall light
+const frontLight = new THREE.DirectionalLight(0xffffff, 1.8);
+frontLight.position.set(0, 2, 8);
+scene.add(frontLight);
+
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
 scene.add(ambientLight);
 

@@ -7,3 +7,4 @@ import './css/animations.css';
 import './js/scene';
 import './js/watch';
 import './js/animate';
+import './js/ui';
