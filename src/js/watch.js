@@ -8,7 +8,7 @@ export let watchModel = null;
 const loader = new GLTFLoader();
 
 loader.load(
-  'src/assets/models/watch.glb',
+  watchUrl,
 
   (gltf) => {
     watchModel = gltf.scene;
